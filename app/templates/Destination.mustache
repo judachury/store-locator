@@ -1,0 +1,21 @@
+<div class="modal-header">  
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<h4 class="text-center">Where are you travelling from?</h4>
+<div class="container-fluid">
+	<div class="row">    
+		<form id="search2" action="https://maps.google.com/maps" method="get" class="search" target="_blank">
+			<input type="hidden" name="daddr" value="{{name}} {{address1}} {{town}} {{postcode}} United Kingdom" />
+			<div class="row">
+				<div class="input-field col-md-4 col-md-offset-3 col-sm-12 col-xs-12 text-center">
+					<i class="material-icons prefix">search</i>
+					<input id="saddr" name="saddr" type="text" class="validate">
+					<label for="saddr">Enter Postcode or Town</label>
+				</div><!-- /input -->
+				<div class="input-field col-md-2 col-sm-12 col-xs-12 smooth-scroll">
+					<button type="submit" class="modal-close btn btn-custom-blue block-xs waves-effect btn-md">Get Directions</button>
+				</div><!-- /input -->
+			</div><!-- /row -->
+		</form>	        	
+	</div><!-- /row -->
+</div><!-- /container-fluid -->

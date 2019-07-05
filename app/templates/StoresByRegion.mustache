@@ -1,0 +1,28 @@
+<div class="col-xs-12">
+	<h5 class="text-center bold">{{region}}</h5>
+	<hr>
+</div><!-- /col -->
+
+{{#stores}}
+<div class="col-md-4 col-sm-6 col-xs-12">
+	<article class="store_location hoverable" data-id="{{IDX}}" data-lat="{{LATITUDE}}" data-lng="{{LONGITUDE}}" data-name="{{STORENAME}}" data-address1="{{STREET}}" data-address2="{{LOCALITY}}" data-town="{{TOWN}}" data-county="{{COUNTY}}" data-enddate="{{ENDDATE}}" data-region="{{region}}" data-postcode="{{POSTCODE}}" data-date="{{ACTIVEDATE}}" data-target-scroll="#search" data-zoom="15" data-directions="true" data-marker="https://www.walkerssupersofastores.com/assets/img/WalkersMarker.png">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<span class="date">Super Sofa Date: {{ACTIVEDATE}} <br> Winner Projection Date: 7pm, {{ENDDATE}}</span>
+				</h4>
+			</div>
+			<div class="panel-body">
+				<div class="address">
+					<span class="address">
+						<span class="bold">{{STORENAME}}</span> <br>
+						{{STREET}}<br>						
+						{{#LOCALITY}}{{LOCALITY}},{{/LOCALITY}} {{TOWN}} <br>
+						{{COUNTY}}, {{POSTCODE}}
+					</span>
+				</div><!-- /address -->
+			</div>
+		</div>
+	</article>
+</div><!-- /col -->
+{{/stores}}
